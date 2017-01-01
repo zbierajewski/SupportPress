@@ -1,0 +1,630 @@
+@charset "utf-8";
+
+/* =General
+-------------------------------------------------------------- */
+
+body {
+	background: #fff;
+	color: #666;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	margin: 0;
+	padding-top: 60px;
+}
+a {
+	color: #0066cc;
+	text-decoration: none;
+}
+a:visited {
+}
+a:focus,
+a:active,
+a:hover {
+	color: #ff4b33;
+}
+li {
+	list-style: none;
+}
+ul {
+	margin-top: 0;
+	padding-left: 10px;
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+
+h1 {
+	background: #313131; /* Old browsers */
+	background: -moz-linear-gradient(top,  #313131 0%, #232323 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#313131), color-stop(100%,#232323)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #313131 0%,#232323 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #313131 0%,#232323 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #313131 0%,#232323 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #313131 0%,#232323 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#232323',GradientType=0 ); /* IE6-9 */
+	border-top: 1px solid #000;
+	border-bottom: 3px solid #eee;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #111;
+	color: #ccc;
+	font-size: 18px;
+	font-weight: normal;
+	left: 0;
+	margin: 0;
+	padding: 10px 30px 10px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 3;
+}
+h1 a {
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 -2px 0 #000;
+}
+h1 a:link,
+h1 a:visited {
+	color: #fff;
+}
+h1 a:focus,
+h1 a:hover,
+h1 a:active {
+	color: #eee;
+}
+h2 {
+	color: #333;
+	font-weight: normal;
+	margin: 0;
+	text-shadow: 0 1px 0 white;
+}
+#searchit {
+	padding: 8px 30px;
+}
+
+
+/* =Navigation
+-------------------------------------------------------------- */
+
+.leftcol div #taglist {
+	text-indent: 0;
+}
+.leftcol a {
+	color: #999;
+}
+.leftcol a:focus,
+.leftcol a:active,
+.leftcol a:hover {
+	color: #ff4b33;
+}
+.leftcol ul {
+	float: left;
+	list-style: none;
+	padding: 15px 0 0;
+}
+.leftcol ul.menu {
+	float: none;
+	margin: 0;
+}
+.leftcol ul.menu a {
+	display: block;
+	padding: 0 0 5px 30px;
+}
+.leftcol ul.menu a:hover {
+}
+.sidebar-summary li {
+	display: block;
+	padding: 0 0 5px 30px;
+}
+
+
+/* =Platter
+-------------------------------------------------------------- */
+
+form table {
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+form table tr.tablehead th {
+	border-bottom: 2px solid #999;
+}
+form table tr.tablehead th:last-child {
+	padding-right: 30px;
+}
+form table tr.alt {
+	background-color: #F3F8FD;
+}
+form table tr.highlight {
+	background: #f1f1f1;
+}
+form table td {
+	padding: 12px 10px;
+}
+form table td:first-child img {
+	border-radius: 24px;
+}
+form table tr:last-child td {
+	white-space: nowrap;
+}
+ol {
+	line-height: 1.6em;
+}
+th {
+	text-align: left;
+	font-weight: normal;
+}
+.alt {
+	background: rgb(230, 240, 255);
+}
+.alt-closed {
+	background: #e99;
+}
+.avatar {
+	float: left;
+	margin: 0 !important;
+	padding: 7px;
+}
+.clear {
+	clear: both;
+}
+.closed-msg {
+	font-size: 80%;
+}
+.content {
+	clear: both;
+}
+.error {
+	background-color: #fee;
+	border: 1px solid #f00;
+}
+#email_error {
+  color: #ac0000;
+}
+.footer {
+	clear: both;
+	padding: 15px;
+	width: 90%;
+}
+.hline {
+	border-bottom: 1px dashed #DDD;
+	margin: 23px 0;
+}
+.hidepart {
+	margin: 0 0 5px 0;
+	padding: 0 15px;
+}
+.highlight {
+	background: #fc0;
+}
+.inlinereplyform {
+	overflow: hidden;
+}
+.inlinereplyform textarea {
+	background: white;
+	border: 1px solid #999;
+	border-radius: 1px;
+	display: block;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: small;
+	height: 218px !important;
+	line-height: 14px;
+	margin: 10px 0 0 0;
+	moz-border-radius: 1px;
+	padding: 3px 1px 3px 3px;
+	webkit-border-radius: 1px;
+}
+.message .inlinereplyform {
+	padding: 15px 15px 0;
+}
+.light {
+	color: #999;
+}
+.meat {
+	display: none;
+}
+.message {
+	/* make sure we show a border around enclosed floats */
+	border: 1px solid #ccc;
+	margin: 15px 0;
+	overflow: auto;
+	padding: padding: 6px;
+	width: auto;
+}
+.message.highlight {
+	background: #ffc;
+	border: 1px solid #B3A000;
+}
+.message .action {
+	background: #efefef;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	margin: 0 !important;
+	moz-border-radius-bottomleft: 4px;
+	moz-border-radius-bottomright: 4px;
+	padding: 12px;
+	webkit-border-bottom-left-radius: 4px;
+	webkit-border-bottom-right-radius: 4px;
+}
+.message .content {
+	margin: 0;
+	padding: 0 15px 15px 15px;
+}
+.message.highlight {
+	display: block;
+}
+.message .mainpart {
+	/* expand and collapse messages in a long thread */
+	display: none;
+}
+.message .message-toggle:hover {
+	opacity: 0.8;
+}
+.mime-part {
+	color: #999;
+	font-size: 12px;
+}
+.mime-part a:link {
+	color: #999;
+}
+.note {
+	background-color: #FFFF99;
+	border: 1px solid #EFEFEF;
+	border-left: 6px solid #CCC;
+	border-radius: 0;
+	box-shadow: none !important;
+	color: #999;
+	font-size: 13px !important;
+	height: auto;
+	margin: 20px 0 !important;
+	overflow: auto;
+	padding: 25px;
+}
+.note.highlight {
+	background: #f8f8f8;
+	border: 3px solid #B3A000;
+	height: 12em;
+	overflow: auto;
+}
+.note:before {
+	content: "(private staff note)";
+}
+.note .avatar {
+	height: 20px;
+	padding: 0 10px 0 0;
+	width: 20px;
+}
+.note .content {
+	color: #444;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	padding: 15px 0 0 0;
+	text-shadow: 0 1px 0 #fff;
+}
+.note .content a {
+}
+.note .content a:hover {
+}
+.note .wrote {
+	padding: 0;
+}
+.note .wrote a {
+}
+.note-button {
+	float: left;
+	margin-right: 13px;
+}
+.note-toggle {
+	display: none;
+	overflow: hidden;
+	width: 100%;
+}
+.notify-toggle {
+	margin-top: 11px;
+	overflow: hidden;
+}
+.notify-users {
+	margin: 13px 0 0;
+}
+.notify-users label {
+	display: block;
+}
+.page-numbers {
+	/* Pagination */
+	border: 1px solid #fff;
+	margin-right: 3px;
+	padding: 4px 7px;
+}
+a.page-numbers {
+	border: 1px solid #ccc;
+	color: #000066;
+	text-decoration: none;
+}
+a.page-numbers:hover {
+	border: 1px solid #999;
+}
+.page-numbers.current {
+	border: 1px solid #999;
+	font-weight: bold;
+}
+.pagenav span {
+	font-weight: bold;
+	margin: 0 6px;
+}
+.padme {
+	padding: 3px;
+}
+.predefined_message {
+	float: right;
+	margin-top: 21px;
+	width: 200px;
+}
+.row-avatar {
+	padding-right: 6px;
+	vertical-align: middle;
+}
+.row-closed {
+	background: #fdd;
+}
+.searchfield {
+	width: 200px;
+}
+.sig {
+	color: #999;
+}
+.sm {
+	font-size: 12px;
+}
+.step-done {
+	text-decoration: line-through;
+}
+.step-done:before {
+	color: green;
+	content: '✓';
+	margin-right: 1em;
+}
+.submit {
+	margin: 13px 0 0;
+}
+.submit-status-update {
+	/* ticket status form */
+	background-color: #ff0;
+}
+.submit-tag-update {
+	/* tag form */
+	background-color: #ff0;
+	width: 500px;
+}
+.tablehead th {
+	border-bottom: 4px solid #6699CC;
+}
+.toplinks {
+	overflow: hidden;
+}
+.viewing-notice {
+	background-color: #ac0000;
+	border-radius: 3px;
+	bottom: 20px;
+	color: #fff;
+	font-size: 14px;
+	left: 20px;
+	padding: 10px;
+	position: fixed;
+}
+.widetext {
+	width: 100%;
+}
+.wrap {
+	float: left;
+	width: 65%;
+}
+.wrote {
+	cursor: pointer;
+	float: left;
+	line-height: 140%;
+	margin: 0 !important;
+	padding: 15px 0 0 0;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+
+input[type="text"],
+textarea {
+}
+textarea {
+	max-width: 100%;
+}
+input[type='checkbox'] {
+	margin: 0 6px 0 0;
+}
+input.has-tiptext {
+	color: #ccc;
+}
+#loginform {
+	margin: 0 0 0 30px;
+}
+#login_error {
+	color: red;
+}
+.select-submit {
+	display: none;
+}
+#searchit input {
+}
+.status-form {
+	overflow: hidden;
+}
+.status-form input[type='submit'] {
+	float: right;
+}
+.status-form span {
+	color: #999;
+	float: right;
+	margin-right: 8px;
+}
+.status-select {
+	float: right;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+
+body.login {
+}
+
+#update-user label {
+	display: inline-block;
+	width: 200px;
+}
+
+#update-user input[type="text"],
+#update-user input[type="password"],
+#update-user input[type="email"],
+#update-user select,
+#update-user textarea {
+	width: 200px;
+}
+
+#update-user textarea {
+	height: 40px;
+	padding: 5px;
+}
+
+
+/* =Layout
+-------------------------------------------------------------- */
+
+@media (min-width: 650px) {
+	.login .details p {
+		float: left;
+	}
+	.login .details + p {
+		clear: both;
+	}
+	#searchit {
+		padding: 8px 15px;
+		position: fixed;
+		right: 15px;
+		top: 3px;
+		z-index: 3;
+	}
+	.leftcol {
+		float: left;
+		width: 15%;
+	}
+	.leftcol div {
+		margin-top: 0 !important;
+		text-indent: -5000px;
+	}
+	.right {
+		float: right;
+	}
+	.rightcol {
+		float: left;
+		left: 0;
+		top: 70px;
+		width: 20%;
+		padding: 15px 0 0;
+		}
+	.wrap {
+		padding: 15px 0 0;
+	}
+	.wrap .frame {
+		border-right: 1px solid #eee;
+	}
+	.wrap-full {
+		float: left;
+		width: 85%;
+	}
+	.wrap .frame,
+	.rightcol .frame,
+	.wrap-full .frame {
+		padding: 15px 30px 0 0;
+	}
+	.rightcol .frame {
+		padding: 0 30px;
+	}
+}
+
+/**
+ * Stats main chart
+ */
+
+#statchart {
+	margin-bottom: 10px;
+	margin-top: 1em;
+}
+
+#stat-chart-container {
+	padding: 10px;
+}
+
+#statchart-box {
+	background: #fff;
+	position: relative;
+	margin-right: 1px;
+	border: 1px solid #dfdfdf;
+}
+#statchart-box h3 {
+	font-size: 12px;
+	line-height: 1em;
+	padding: 8px 10px;
+	margin: 0 0 10px 0;
+	color: #464646;
+	text-shadow: 0px 1px 0px #eee;
+	background: #dfdfdf;
+	color: #464646;
+	text-transform: uppercase;
+}
+#stat-chart-container  {
+	padding:10px;
+}
+#stats-nuggets ul {
+	padding: 0 10px;
+	overflow: hidden;
+	position: relative;
+	_height: 1%;
+	margin: 0 0 3px;
+}
+#stats-nuggets ul li {
+	float: left;
+	list-style: none;
+	width: 25%;
+}
+#stats-nuggets ul li div {
+	color: #999;
+	margin-right: 20px;
+	border-right: 1px solid #F5F5F5;
+	padding-bottom: 8px;
+}
+#stats-nuggets ul li div.last {
+	width: 100% !important;
+	border-right: none !important;
+}
+#stats-nuggets ul li span {
+	font-size: 30px;
+	line-height: 1.5em;
+	display: block;
+	color: #333;
+}
+li.summarytables {
+	padding-top: 2.5em;
+	text-align: right;
+}
+/* Misc styles */
+.attachment-box {
+	width: 50%;
+}
+.cc-toggle {
+	display: block;
+	font-size: 11px;
+	margin-top: 2px;
+}
+.message-box {
+	margin-right: 6px;
+}
