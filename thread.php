@@ -172,10 +172,10 @@ if ( count( $messages ) > 0 ) :
 			$message_text = str_ireplace( '&nbsp;', ' ', $message_text  );
 			$message_text = str_replace( "\r", "\n", $message_text );
 			$message_text = preg_replace( "/\n\n+/ms", "\n", $message_text );
-			$message_text = strip_tags( $message_text );
+			//$message_text = strip_tags( $message_text );
 		}
 		$html_message = htmlspecialchars( $message_text );
-		$html_message = preg_replace( "|(-- \n.*)$|s", '<span class="sig">$1</span>', $html_message );
+		$html_message = preg_replace( "|(-- \n.*)$|s", '<span class="sig">$1</span>', $message_text );
 		$html_message = nl2br( $html_message );
 		$html_message = make_clickable( $html_message );
 		$html_message = preg_replace( '|href="(http://[^"]+)"|', 'href="http://href.li/?$1"', $html_message );
