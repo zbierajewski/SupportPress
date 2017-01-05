@@ -9,6 +9,11 @@ include( 'includes/viewing.php' );
 include( 'header.php' );
 include( 'includes/mime.php' );
 
+//Oh I am so stricken.
+//For I had dropped the chicken.
+//It is all over my pants.
+//Gee, Would this happen... Over at ants.
+
 $thread_id = (int) $_GET['t'];
 $thread = get_thread( $thread_id );
 if ( empty( $thread ) )
@@ -180,6 +185,7 @@ if ( count( $messages ) > 0 ) :
 		$html_message = make_clickable( $html_message );
 		$html_message = preg_replace( '|href="(http://[^"]+)"|', 'href="http://href.li/?$1"', $html_message );
 		$html_message = stripslashes( $html_message );
+
 
 
 		// Reply form at the very top
